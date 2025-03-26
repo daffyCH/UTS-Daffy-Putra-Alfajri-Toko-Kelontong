@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Penjualan Toko</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0d98e3;
+}
+
+header {
+    background-color: rgb(16, 35, 162);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #22378b;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form input, form button {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+<body>
+    <header>
+        <h1>Aplikasi Manajemen Penjualan Toko</h1>
+        <nav>
+            <ul>
+                <li><a href="#produk">Data Produk</a></li>
+                <li><a href="#pelanggan">Data Pelanggan</a></li>
+                <li><a href="#transaksi">Transaksi Penjualan</a></li>
+                <li><a href="#stok">Laporan Stok</a></li>
+                <li><a href="#laporan">Laporan Penjualan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="produk">
+            <h2>Data Produk/Barang</h2>
+            <form>
+                <label>Nama Produk: <input type="text"></label><br>
+                <label>Harga: <input type="number"></label><br>
+                <label>Stok: <input type="number"></label><br>
+                <button type="submit">Simpan</button>
+            </form>
+        </section>
+
+        <section id="pelanggan">
+            <h2>Data Pelanggan</h2>
+            <form>
+                <label>Nama Pelanggan: <input type="text"></label><br>
+                <label>No HP: <input type="text"></label><br>
+                <button type="submit">Simpan</button>
+            </form>
+        </section>
+
+        <section id="transaksi">
+            <h2>Transaksi Penjualan</h2>
+            <form>
+                <label>Nama Produk: <input type="text"></label><br>
+                <label>Jumlah: <input type="number"></label><br>
+                <label>Nama Pelanggan: <input type="text"></label><br>
+                <button type="submit">Proses Transaksi</button>
+            </form>
+        </section>
+
+        <section id="stok">
+            <h2>Laporan Stok / Persediaan</h2>
+            <table width="100%" border="1">
+                <tr>
+                    <th>ID</th>
+                    <th>Nama Produk</th>
+                    <th>Kategori</th>
+                    <th>Harga (Rp)</th>
+                    <th>Stok Tersedia</th>
+                </tr>
+                <tr><td>1</td><td>Beras 5kg</td><td>Sembako</td><td>65.000</td><td>20 kg</td></tr>
+                <tr><td>2</td><td>Minyak Goreng</td><td>Sembako</td><td>18.000</td><td>35 liter</td></tr>
+                <tr><td>3</td><td>Gula Pasir 1kg</td><td>Sembako</td><td>15.000</td><td>50 kg</td></tr>
+                <tr><td>4</td><td>Kopi Sachet</td><td>Minuman</td><td>2.500</td><td>100 pcs</td></tr>
+                <tr><td>5</td><td>Sabun Mandi</td><td>Kebutuhan</td><td>5.000</td><td>75 pcs</td></tr>
+            </table>
+        </section>
+
+        <section id="laporan">
+            <table width="100%" border="1">
+            <h2>Laporan Penjualan</h2>
+            
+                <tr>
+                    <th>ID Transaksi</th>
+                    <th>Tanggal</th>
+                    <th>Nama Produk</th>
+                    <th>Jumlah Terjual</th>
+                    <th>Total Harga (Rp)</th>
+                </tr>
+                <tr><td>TRX001</td><td>25-03-2025</td><td>Beras 5kg</td><td>2</td><td>130.000</td></tr>
+                <tr><td>TRX002</td><td>25-03-2025</td><td>Minyak Goreng</td><td>5 liter</td><td>90.000</td></tr>
+                <tr><td>TRX003</td><td>25-03-2025</td><td>Kopi Sachet</td><td>10</td><td>25.000</td></tr>
+                <tr><td>TRX004</td><td>26-03-2025</td><td>Gula Pasir 1kg</td><td>3 kg</td><td>45.000</td></tr>
+                <tr><td>TRX005</td><td>26-03-2025</td><td>Sabun Mandi</td><td>7</td><td>35.000</td></tr>
+            </table>
+        
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Toko Kelontong</p>
+    </footer>
+</body>
+</html>
